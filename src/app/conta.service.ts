@@ -13,4 +13,8 @@ export class ContaService {
   listar() {
     return this.http.get<any[]>(`${this.contasUrl}`)
   }
+
+  criar (contato:any) {
+    return this.http.post(this.contasUrl, contato);
+  }
 }

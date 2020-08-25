@@ -4,18 +4,17 @@ import {HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ContasListagemComponent } from './contas-listagem/contas-listagem.component';
 import { ContaService } from './conta.service';
-
+import { FormsModule } from '@angular/forms'
 @NgModule({
   declarations: [
     AppComponent,
-    ContasListagemComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [ContaService],
   bootstrap: [AppComponent]
